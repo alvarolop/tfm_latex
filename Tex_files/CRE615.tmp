@@ -1,0 +1,142 @@
+\makeatletter
+\def\@department{Señales, Sistemas y Radiocomunicaciones}
+\def\@university{Universidad Politécnica de Madrid}
+\def\@school{Escuela Técnica Superior de Ingenieros de Telecomunicación}
+
+\def\@author{Álvaro López Medina}
+\def\@tutor{Dña. Zoraida Frías Barroso}
+\def\@advisor{Dña. Zoraida Frías Barroso}
+
+\def\@presidente{..............................................}
+\def\@vocal{..............................................}
+\def\@secretario{..............................................}
+\def\@suplente{..............................................}
+
+\def\@logo{logoETSIT}
+\def\@title{TESTING FUTURE 5G MOBILE COVERAGE OBLIGATIONS IN BRITAIN}
+\def\@degree{MÁSTER UNIVERSITARIO EN INGENIERÍA DE TELECOMUNICACIÓN}
+\def\@tfm{Trabajo de Fin de Máster}
+\def\@date{July 2018} 
+
+
+
+\begin{titlepage}
+
+% Affiliation
+\begin{center}
+
+{\centering\scshape\setlength{\parindent}{0cm} \normalsize \@university\\[5mm]}
+{\centering\scshape\setlength{\parindent}{0cm} \normalsize \@school\\[10mm]}
+
+% Logo
+\includegraphics[width=0.7\textwidth]{logoETSIT}
+
+
+% Affiliation - logo space
+\vspace{1cm}
+
+% Type of document: PhD Thesis...
+
+{\Large \centering \scshape \@degree\\[2cm]}
+{\LARGE \centering \scshape \@tfm\\[2cm]}
+
+% At least... the title
+{\LARGE \bfseries \@title \par \\[5cm]}
+
+
+% Footer
+{\large\sc \@author \\[0.5cm]}
+{\large\sc \@date}\\
+
+\end{center}
+\end{titlepage}
+
+
+
+%%% Title page definition
+\begin{titlepage}
+
+\vspace{2cm}
+
+{\centering\Large\bfseries \@degree\\[1cm]}
+
+\begin{tabular}[t]{p{3.5cm} l}
+ \bf Título: & \sc Testing Future 5G Mobile\\
+             & \sc Coverage Obligations in Britain.\\
+& \\ 
+\bf Autor:  & \sc D. \@author\\ \\
+\bf Tutor: & \sc \@tutor \\ \\
+\bf Ponente: & \sc \@advisor \\ \\
+\bf Departamento: & \sc \@department \\
+\end{tabular}
+\bigskip
+\vspace{1cm}
+
+\begin{center}
+\LARGE\bfseries Miembros del tribunal
+\end{center}
+
+\vspace{1cm}
+\large
+\begin{tabular}[t]{p{3.5cm} p{11cm}}
+\bf Presidente: & \sc \@presidente \\ \\
+\bf Vocal: & \sc  \@vocal \\ \\
+\bf Secretario: & \sc \@secretario \\ \\
+\bf Suplente: & \sc \@suplente \\ \\
+\end{tabular}
+
+\vspace{1cm}
+
+\vspace{2cm}
+\begin{flushright}
+ Madrid, a ..... de ................ de .........
+
+\end{flushright}
+\end{titlepage}
+
+
+
+
+
+\begin{titlepage}
+
+% Upper space
+%   \vspace*{2cm}
+
+% Affiliation
+{\centering\scshape\setlength{\parindent}{0cm} \LARGE \@university\\[20mm]}
+{\centering\scshape\setlength{\parindent}{0cm} \Large \@school\\[10mm]}
+
+\begin{center}
+
+% Logo
+\includegraphics[width=0.7\textwidth]{logoETSIT}
+
+
+% Affiliation - logo space
+\vspace{1cm}
+
+% Type of document: PhD Thesis...
+{\Huge \centering \scshape \@degree\\[1cm]}
+
+% At least... the title
+{\Huge \bfseries \@title \\[5cm]}
+
+% Title - logo space
+% \vspace{3cm}
+
+% Title - name space
+% \vspace{3cm}
+
+% Author's name
+{\large\sc \@author \\[0.5cm]}
+
+% Date
+{\large\sc \@date}\\
+\end{center}
+
+\end{titlepage}
+
+
+
+\makeatother

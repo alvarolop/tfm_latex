@@ -1,0 +1,119 @@
+\documentclass[12pt,a4paper,english,twoside]{book} %book, report, article
+
+\usepackage{babel} %%%Incluimos el paquete Babel que sirve para separar correctamente las palabras de multitud de idiomas%%%
+\usepackage[utf8]{inputenc}%%%Este paquete permite poner acentos directamente%%%
+\usepackage[T1]{fontenc} 
+\usepackage[dvips]{epsfig} %%%Inclusión de figuras postscript con visualización posterior%%%
+\usepackage{indentfirst} %%%Espaciado de primera línea de cada párrafo%%%
+\usepackage[gen]{eurosym} %soporte para el comando \euro
+\usepackage[hidelinks]{hyperref}
+\usepackage{graphicx}
+\usepackage{anysize}
+%\usepackage{gensymb}
+\usepackage{rotating}
+\usepackage{ulem}
+\usepackage{makeidx}
+%\usepackage{showidx}
+\usepackage{color}
+\usepackage{listings}
+\usepackage{titlesec}
+\usepackage[final]{pdfpages} %Permite insertar pdf's enteros o por paginas
+
+\usepackage{hyperref}
+%\usepackage{boxedminipage} %Para poner dos imagenes una al lado de la otra
+%\usepackage{verbatim} % Para mostrar comandos o para dejar las cosas tal cual estan
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{subfigure}
+
+%Paquetes de Alvaro
+%\usepackage{enumerate} % enumerados
+\usepackage{float} % para usar [H]
+\usepackage{cite}
+\usepackage{url}
+%\usepackage{wrapfig} % Poner texto al lado de imagenes
+\usepackage{longtable}
+
+%% Word to Latex converter
+\usepackage{amsmath} % Definir equaciones en varias líneas
+\usepackage{latexsym}
+\usepackage{amsfonts}
+\usepackage[normalem]{ulem}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{subfig}
+\usepackage{wrapfig}
+\usepackage{wasysym}
+\usepackage{enumitem}
+\usepackage{adjustbox}
+\usepackage{ragged2e}
+\usepackage[svgnames,table]{xcolor}
+\usepackage{tikz}
+\usepackage{changepage}
+\usepackage{setspace}
+\usepackage{hhline}
+\usepackage{multicol}
+\usepackage{tabto}
+\usepackage{multirow}
+\usepackage{makecell}
+\usepackage{fancyhdr}
+\usepackage[toc,page]{appendix}
+\usepackage[T1]{fontenc}
+\usepackage[hidelinks]{hyperref}
+\usetikzlibrary{shapes.symbols,shapes.geometric,shadows,arrows.meta}
+%\DeclareUnicodeCharacter{00A0}{€}
+\urlstyle{same}
+%\flushbottom
+%\raggedbottom
+\usepackage{parskip}
+\setlength{\parskip}{0.2cm plus0mm minus1.5mm} %Importante, {espacio entre parrafos, variable {+1,-1.5}}
+%\setlength{\parskip}{\baselineskip}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Personalización
+\marginsize{4cm}{3cm}{3cm}{2cm} %define márgenes {izdo}{drch}{sup}{inf}
+\graphicspath{{images/}}
+%\newenvironment{codigo}[1]{\flushleft\boxedminipage{\linewidth}\fontsize{#1}{#1}\selectfont\verbatim}{\endverbatim\endboxedminipage\endflushleft}
+
+%\pretolerance=100 %para que no separe las palabras al cambiar de linea
+%\tolerance=200
+
+%\pretolerance=150
+%\tolerance=753
+
+\titleformat{\chapter}[display] % Define formato de capítulos
+{\Huge\filright}
+{\Huge\scshape{\chaptertitlename}
+\Huge\thechapter
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\input{./Tex_files/A_Title}
+
+\frontmatter
+\makeindex
+\tableofcontents
+\include{./Tex_files/Abstract}
+\include{./Tex_files/Acronyms}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\mainmatter
+\pagestyle{headings}
+\input{./Tex_files/Chapter1}
+\input{./Tex_files/Chapter2}
+\input{./Tex_files/Chapter3}
+\input{./Tex_files/Chapter4}
+\input{./Tex_files/Chapter5}
+\input{./Tex_files/Appendix1}
+\input{./Tex_files/Appendix2}
+\input{./Tex_files/Appendix3}
+
+\listoffigures
+\addcontentsline{toc}{part}{List of Figures} % para que aparezca en el indice de contenidos
+\listoftables
+\addcontentsline{toc}{part}{List of Tables} % para que aparezca en el indice de contenidos
+\backmatter
+
+\input{./Tex_files/BiblioAndBack}
+\end{document}

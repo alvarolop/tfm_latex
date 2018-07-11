@@ -1,0 +1,18 @@
+\cleardoublepage
+\backmatter
+\nocite{*}
+\bibliographystyle{unsrt} %unsrt %plainurl %ieeetr 
+\bibliography{References}
+\addcontentsline{toc}{part}{References}
+
+%\input{References}
+
+\printindex
+
+\cleardoublepage
+\newpage
+\vspace*{13cm}
+
+\begin{center}
+This page is left blank intentionally.
+\end{center}
