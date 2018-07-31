@@ -26,5 +26,5 @@
 # Exclude output .pdf #
 #######################
 *.pdf
-!/target
+!/target/*
 
