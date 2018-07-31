@@ -1,0 +1,20 @@
+# Logs and databases #
+######################
+*.log
+*.sql
+*.sqlite
+
+
+# Latex build output files #
+############################
+*.aux
+*.bbl
+*.blg
+*.lof
+*.log
+*.lot
+*.out
+*.tcp
+*.toc
+*.tps
+
