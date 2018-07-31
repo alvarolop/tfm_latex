@@ -1,51 +1,39 @@
 \documentclass[12pt,a4paper,english,twoside]{book} %book, report, article, twoside
 
-%\usepackage{tracklang}
-
-\usepackage[english]{babel} %%%Incluimos el paquete Babel que sirve para separar correctamente las palabras de multitud de idiomas%%%
-\usepackage[utf8]{inputenc}%%%Este paquete permite poner acentos directamente%%%
+%
+%% Most important packages
+%
+\usepackage[english]{babel} % Support to split words in several languages
+\usepackage[utf8]{inputenc} % Allows to add accents directly
 \usepackage[T1]{fontenc} 
-\usepackage[dvips]{epsfig} %%%Inclusión de figuras postscript con visualización posterior%%%
-\usepackage{indentfirst} %%%Espaciado de primera línea de cada párrafo%%%
-\usepackage[gen]{eurosym} %soporte para el comando \euro
-\usepackage[hidelinks]{hyperref}
-\usepackage{graphicx}
-\usepackage{anysize}
-%\usepackage{gensymb}
-\usepackage{rotating}
-\usepackage{ulem}
-\usepackage{makeidx}
-%\usepackage{showidx}
-\usepackage{color}
-\usepackage{listings}
-\usepackage{titlesec}
-\usepackage[final]{pdfpages} %Permite insertar pdf's enteros o por paginas
-
-\usepackage{hyperref}
-%\usepackage{boxedminipage} %Para poner dos imagenes una al lado de la otra
-%\usepackage{verbatim} % Para mostrar comandos o para dejar las cosas tal cual estan
-\usepackage{array}
-\usepackage{multirow}
-\usepackage{subfigure}
-
-%Paquetes de Alvaro
-%\usepackage{enumerate} % enumerados
-\usepackage{float} % para usar [H]
+\usepackage{indentfirst} % First line spacing in each paragraph
+\usepackage[gen]{eurosym} % Support for the \euro command
+\usepackage[hidelinks]{hyperref} % Remove red squares in the index
+\usepackage{makeidx} % Package to create indexes
+\usepackage{parskip} % Limit ranges of spacing between paragraphs
+\usepackage{float} % Use [H]
 \usepackage{cite}
 \usepackage{url}
-%\usepackage{wrapfig} % Poner texto al lado de imagenes
+\usepackage{graphicx}
+
+%
+%% Secondary packages
+%
+\usepackage{anysize}
+\usepackage{rotating}
+\usepackage{ulem}
+\usepackage{color} % Color the cell of the page circa 64
+\usepackage{listings}
+\usepackage{titlesec}
+\usepackage{array}
+\usepackage{multirow}
 \usepackage{longtable}
 
-%% Word to Latex converter
-\usepackage{amsmath} % Definir equaciones en varias líneas
-\usepackage{latexsym}
-\usepackage{amsfonts}
-\usepackage[normalem]{ulem}
-\usepackage{amssymb}
-\usepackage{graphicx}
-\usepackage{subfig}
-\usepackage{wrapfig}
-\usepackage{wasysym}
+%
+%% Word-to-Latex PACKAGES: Could be removed
+%
+\usepackage{amsmath} % Define equations in several lines
+\usepackage{wasysym} % Set of extra symbols
 \usepackage{enumitem}
 \usepackage{adjustbox}
 \usepackage{ragged2e}
@@ -56,37 +44,58 @@
 \usepackage{hhline}
 \usepackage{multicol}
 \usepackage{tabto}
-\usepackage{multirow}
 \usepackage{makecell}
 \usepackage{fancyhdr}
 \usepackage[toc,page]{appendix}
-\usepackage[T1]{fontenc}
-\usepackage[hidelinks]{hyperref}
 \usetikzlibrary{shapes.symbols,shapes.geometric,shadows,arrows.meta}
-%\DeclareUnicodeCharacter{00A0}{€}
 \urlstyle{same}
-%\flushbottom
-\raggedbottom
-\usepackage{parskip}
-\setlength{\parskip}{0.2cm plus0mm minus1.5mm} %Importante, {espacio entre parrafos, variable {+1,-1.5}}
-%\setlength{\parskip}{\baselineskip}
+
+%
+%% Not neccesary here
+%
+%\usepackage[final]{pdfpages} % Insert pdfs
+%\usepackage[dvips]{epsfig} %%%Inclusión de figuras postscript con visualización posterior%%%
+%\usepackage{boxedminipage} % Put two images one next to the other
+%\usepackage{verbatim} % Show commands without executing them
+%\usepackage{subfigure}
+%\usepackage{enumerate} % Enumerates
+%\usepackage{wrapfig} % Place text next to images
+%\usepackage{latexsym} % Used to create circles
+%\usepackage{amsfonts} % Extended mathematic fonts
+%\usepackage[normalem]{ulem} % Underline
+%\usepackage{amssymb}
+%\usepackage{subfig}
+
+
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Personalización
-\marginsize{4cm}{3cm}{3cm}{2cm} %define márgenes {izdo}{drch}{sup}{inf}
-\graphicspath{{media/}}
-%\newenvironment{codigo}[1]{\flushleft\boxedminipage{\linewidth}\fontsize{#1}{#1}\selectfont\verbatim}{\endverbatim\endboxedminipage\endflushleft}
+% Customization
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%\pretolerance=100 %para que no separe las palabras al cambiar de linea
-%\tolerance=200
+%% Modify the bottom alignment of the paragraphs
+\raggedbottom
+%\flushbottom
+\setlength{\parskip}{0.2cm plus0mm minus1.5mm} % Important, {paragraphs gap, variable {+0,-1.5}}
 
+%% Tolerance to split words in two lines
 \pretolerance=500
 \tolerance=753
 
-\titleformat{\chapter}[display] % Define formato de capítulos
+%% Chapter title customization
+\titleformat{\chapter}[display]
 {\Huge\filright}
 {\Huge\scshape{\chaptertitlename}
 \Huge\thechapter
 }
+
+%% Default images folder
+\graphicspath{{media/}}
+
+%% Default document margins
+\marginsize{4cm}{3cm}{3cm}{2cm} % {left}{right}{up}{down}
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
@@ -112,9 +121,11 @@
 \input{./Tex_files/Appendix3}
 
 \listoffigures
-\addcontentsline{toc}{part}{List of Figures} % para que aparezca en el indice de contenidos
+\addcontentsline{toc}{part}{List of Figures} % To show it on the index
 \listoftables
-\addcontentsline{toc}{part}{List of Tables} % para que aparezca en el indice de contenidos
+\addcontentsline{toc}{part}{List of Tables} % To show it on the index
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \backmatter
 
 \input{./Tex_files/BiblioAndBack}
