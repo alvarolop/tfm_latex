@@ -10,6 +10,10 @@
 *.aux
 *.bbl
 *.blg
+*.dvi
+*.idx
+*.ilg
+*.ind
 *.lof
 *.log
 *.lot
@@ -17,4 +21,10 @@
 *.tcp
 *.toc
 *.tps
+*.tmp
+
+# Exclude output .pdf #
+#######################
+*.pdf
+!/target
 
