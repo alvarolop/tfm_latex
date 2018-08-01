@@ -1,0 +1,31 @@
+\chapter{Analysis and results}
+%\vspace{\baselineskip}
+%\addcontentsline{toc}{section}{Analysis and results}
+This chapter presents the results obtained from several simulations and compares them to analyse the differences across scenarios. The model allows to modify and customize several options, such as the population growth rate, the user-speed demand growth rate, the coverage obligations, the way this coverage obligations are enforced, and the capacity expansion strategies that the telecom operator can use to achieve the coverage obligation and meet the demand.\par
+
+There are also some parameters of the code that are fixed a priori such as the overbooking factor of the macrocells, the percentage of traffic in the busy hour, if the operator invests only to meet the coverage obligation or to meet the demand, and if the operator has a limited budget or not. However, these can be modified to analyse the impact of variations of those parameters, too.\par
+
+Regarding the PCDs and LADs, it is important to understand how they are distributed across the country. The following figures represent the population distribution, measured in aggregate population, and the population density distribution, measured in population per km\textsuperscript{2}. The values for each LAD are obtained at the beginning of the simulation (2020) and are equal for all the years. Despite these values vary over time depending on the population and end-user speed growth scenarios, this variation is homogeneous across the territory.\par
+
+
+
+%%%%%%%%%%%%%%%%%%%% Figure/Image No: 1 starts here %%%%%%%%%%%%%%%%%%%%
+
+\begin{figure}[H]
+	\begin{Center}
+		\includegraphics[width=0.95\textwidth]{./media/image40.png}
+		\caption{Map. Population and population density. Source: Author}
+	\end{Center}
+\end{figure}
+
+
+%%%%%%%%%%%%%%%%%%%% Figure/Image No: 1 Ends here %%%%%%%%%%%%%%%%%%%%
+
+As it can be seen, the population is clearly higher in the London LAD, while the rest of the country have more similar population values (figure on the left). On the contrary, when we consider population density at the LAD, other regions in the UK become more important, matching with most of the important cities of the country: Manchester, Liverpool, Birmingham, Sheffield, Glasgow, etc. \par
+
+In the following sections, I  present the simulations of different scenarios with different capacity expansion strategies and coverage obligation options. First, we evaluate the new capacity expansion strategy, 700 MHz densification. Then, we compare all the capacity expansion strategies and extract the key advantages and disadvantages of each of them. Finally, we test the coverage obligation options using two different strategies in the simulation to analyse how different coverage obligations affect the telecom operator in different ways depending on the strategy.\par
+
+
+\input{./Tex_files/Chapter4-1}
+\input{./Tex_files/Chapter4-2}
+\input{./Tex_files/Chapter4-3}
