@@ -1,15 +1,11 @@
 \documentclass[12pt,a4paper,english,twoside]{book} %book, report, article, twoside
 
-%
-%% Most important packages
-%
 \usepackage[english]{babel} % Support to split words in several languages (I think that with this package, font is thiner)
+\usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc} % Allows to add accents directly
-\usepackage[T1]{fontenc} 
 \usepackage{indentfirst} % First line spacing in each paragraph
 \usepackage{lmodern,textcomp} % Support for the € character and other symbols
 \usepackage[hidelinks]{hyperref} % Remove red squares in the index
-%\usepackage{makeidx} % Package to create indexes
 \makeindex
 \usepackage{parskip} % Limit ranges of spacing between paragraphs
 \usepackage{float} % Use [H]
@@ -17,9 +13,7 @@
 \usepackage{url}
 \usepackage{graphicx}
 
-%
-%% Secondary packages
-%
+
 \usepackage{anysize}
 \usepackage{rotating}
 \usepackage{ulem}
@@ -30,9 +24,7 @@
 \usepackage{multirow}
 \usepackage{longtable}
 
-%
-%% Word-to-Latex PACKAGES: Could be removed
-%
+
 \usepackage{amsmath} % Define equations in several lines
 \usepackage{wasysym} % Set of extra symbols
 \usepackage{enumitem}
@@ -51,25 +43,6 @@
 \usetikzlibrary{shapes.symbols,shapes.geometric,shadows,arrows.meta}
 \urlstyle{same}
 
-%
-%% Not neccesary here
-%
-%\usepackage[final]{pdfpages} % Insert pdfs
-%\usepackage[dvips]{epsfig} %%%Inclusión de figuras postscript con visualización posterior%%%
-%\usepackage{boxedminipage} % Put two images one next to the other
-%\usepackage{verbatim} % Show commands without executing them
-%\usepackage{subfigure}
-%\usepackage{enumerate} % Enumerates
-%\usepackage{wrapfig} % Place text next to images
-%\usepackage{latexsym} % Used to create circles
-%\usepackage{amsfonts} % Extended mathematic fonts
-%\usepackage[normalem]{ulem} % Underline
-%\usepackage{amssymb}
-%\usepackage{subfig}
-
-
-
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Customization
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -87,8 +60,7 @@
 \titleformat{\chapter}[display]
 {\Huge\filright}
 {\Huge\scshape{\chaptertitlename}
-\Huge\thechapter
-}
+\Huge\thechapter}
 
 %% Default images folder
 \graphicspath{{media/}}
@@ -100,9 +72,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
-
 \input{./Tex_files/A_Title}
-
 \frontmatter
 \printindex
 \tableofcontents
