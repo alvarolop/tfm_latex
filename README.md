@@ -1,6 +1,12 @@
 # Contribution to the development of a 5G model to test future mobile coverage obligations in Britain
 This is the source code of the Latex project of my Master's Thesis.
 
+## Getting Started
+
+- Clone this repo and build the main.tex file.
+If you are new with Latex and Latex editors, I recommend you to use [TeXstudio](https://www.texstudio.org/).
+
+- Two example of pdfs are stored in the target folder.
 
 ## Abstract
 

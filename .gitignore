@@ -22,6 +22,7 @@
 *.toc
 *.tps
 *.tmp
+*.gz
 
 # Exclude output .pdf #
 #######################
